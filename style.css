@@ -1,8 +1,20 @@
+@keyframes from-right{
+    from{
+        transform: translateX(100%)
+    }
+    to{
+        transform: translateX(0)
+    }
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    overflow-x: hidden;
 }
 
 main{
@@ -17,6 +29,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .presentation-banner img{
@@ -37,6 +50,8 @@ main{
     height: 100%;
     width: 28%;
     background-color: #00000088;
+
+    animation: from-right .8s ease-out forwards;
 }
 
 .box-actions h4{
